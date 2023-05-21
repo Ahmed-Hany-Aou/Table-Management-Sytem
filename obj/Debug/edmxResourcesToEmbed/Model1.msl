@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="table_management_systemModelStoreContainer" CdmEntityContainer="table_management_systemEntities">
+    <EntitySetMapping Name="reservations">
+      <EntityTypeMapping TypeName="table_management_systemModel.reservation">
+        <MappingFragment StoreEntitySet="reservations">
+          <ScalarProperty Name="reservation_id" ColumnName="reservation_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="time_slot_id" ColumnName="time_slot_id" />
+          <ScalarProperty Name="table_id" ColumnName="table_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tables">
+      <EntityTypeMapping TypeName="table_management_systemModel.table">
+        <MappingFragment StoreEntitySet="tables">
+          <ScalarProperty Name="table_id" ColumnName="table_id" />
+          <ScalarProperty Name="table_size" ColumnName="table_size" />
+          <ScalarProperty Name="no_of_seats" ColumnName="no_of_seats" />
+          <ScalarProperty Name="views" ColumnName="views" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="time_slots">
+      <EntityTypeMapping TypeName="table_management_systemModel.time_slots">
+        <MappingFragment StoreEntitySet="time_slots">
+          <ScalarProperty Name="time_slot_id" ColumnName="time_slot_id" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="end_time" ColumnName="end_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="table_management_systemModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
